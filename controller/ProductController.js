@@ -28,7 +28,7 @@ class ProductController {
       console.log(error);
     }
   };
-  // console.log("this is a backend");
+
   static GetProductsById = async (req, res) => {
     try {
       const result = await productModel.findById(req.params.id);
